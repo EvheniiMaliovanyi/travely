@@ -1,0 +1,240 @@
+@import "normalize";
+@import "layout";
+@import "slick";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
+
+body{
+	
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+h1,h2,h3{
+	margin: 0;
+}
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background-color:  #fc5f2e;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	height: 55px;
+	line-height: 55px;
+	border: none;
+	color: #FFF;
+	font-size: 20px;
+	padding: 0 25px;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+.ba-button:active{
+
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-logo {
+	float: left;
+	display: inline-block;
+}
+header{
+	position: relative;
+	background-color: #fff;
+	.ba-header{
+		pospadding-top: 45px;
+		padding-bottom: 10px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		background: #fff;
+		display: flex;
+		justify-content: space-between;
+		svg{
+			margin-top: 7px;
+			float: left;
+			fill: #fd5c08 ;
+		}
+		.ba-nav{
+			float: right;
+			margin: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			padding: 10px 0 10px;
+			li{
+				text-align: center;
+				margin-left: 5px;
+				a{
+					width: 140px;
+					padding: 0;
+					display: block;
+					text-decoration: none;
+					color: #3f3e41 ;
+					text-transform: uppercase;
+
+					img{
+						display: block;
+						margin: 0 auto;
+					}
+					p{
+						font-size: 13px;
+						font-weight: 700;
+						margin-top: 8px;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+	}
+}
+.ba-intro{
+	background: #cc3f7d url(../img/bg_1.jpg) 50%;
+	background-size: cover;
+	color: #FFF;
+	height: 100vh;
+	&__content{
+		padding: 100px 0 144px;
+		max-width: 65%;
+	}
+	&__suptitle{
+		font-size: 38px;
+		font-weight: 400;
+		text-transform: uppercase;
+		line-height: 1.4;
+	}
+	&__title{
+		text-transform: uppercase;
+		font-size: 100px;
+		font-weight: 800;
+		line-height: .9;
+	}
+	p{
+		font-size: 17px;
+		line-height: 1.65;
+		margin-top: 9px;
+		font-weight: 400;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75);
+	}
+}
+.ba-cities{
+	background: #fff url(../img/map.png) 50%;
+	background-size: cover;
+	&__content{
+		padding: 50px 0;
+	
+	}
+	&__left{
+		float: left;
+		width: 50%;
+		text-transform: uppercase;
+ 
+	}
+	&__title{
+		color:  #fd5c08 ;
+		font-size: 80px;
+		font-weight: 800;
+		line-height: 1;
+	}
+	&__subtitle{
+		font-size: 34px;
+		font-weight: 400;
+		line-height: 1;
+	}
+	&__right{
+		float: right;
+		width: 50%;
+		padding-left: 18px;
+		p{
+			font-weight: 400;
+			font-size: 17px;
+			margin-top: 6px;
+			line-height: 1.65;
+		}
+	}
+	&__photos{
+		margin-bottom: 38px;
+		.ba-photos{
+			position: relative;
+			display: block;
+			float: left;
+			img{
+				display: block;
+				
+			}
+		}
+ 
+	}
+	&__starting{
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		color:  #ffffff ;
+		padding: 17px 30px;
+		p{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.6;
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+		.ba-price{
+			font-size: 42px;
+			font-weight: 800;
+			line-height: 27px;
+			background: url(../img/euro.svg) no-repeat 1% 100%;
+			margin-top: 5px;
+			padding-left: 31px;
+		}
+	}
+	.ba-button{
+		float: right;
+		margin-right: 19px;
+	}
+ 
+ }
